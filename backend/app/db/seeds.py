@@ -85,7 +85,7 @@ def create_comment(body):
 #write_to_postgres('go')
 
 for x in range(100):
-    create_user('hello' + str(x),'hello' + str(x),'a','a')
+    create_user('hi' + str(x),'hello' + str(x),'a','a')
 
 for x in range(100):
     create_items('item' + str(x),'item' + str(x),'item','item')
