@@ -3,7 +3,7 @@ print('Please fill the seeds file')
 import psycopg2
 
 conn = psycopg2.connect(database="anythink-market",
-                        host="postgres-python",
+                        host="localhost",
                         user="postgres",
                         password="postgres",
                         port="5432")
