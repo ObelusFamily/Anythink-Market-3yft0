@@ -36,10 +36,10 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={item.image}
+        src={item.image} 
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
-      />
+        onError={e => { e.currentTarget.src = "/placeholder.png"; }} />
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
           <h3 className="card-title">{item.title}</h3>
