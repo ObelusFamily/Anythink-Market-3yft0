@@ -4,7 +4,7 @@ import _superagent from "superagent";
 const superagent = superagentPromise(_superagent, global.Promise);
 
 const API_ROOT =
-  process.env.REACT_APP_NODE_ENV !== "production"
+  process.env.REACT_APP_BACKEND_URL !== "production"
     ? "http://localhost:3000/api"
     : "https://anythink-market-3yft0-api.herokuapp.com/api";
 
