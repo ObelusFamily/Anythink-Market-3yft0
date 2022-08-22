@@ -13,7 +13,7 @@ export const history = createHistory();
 const myRouterMiddleware = routerMiddleware(history);
 
 const getMiddleware = () => {
-  if (process.env.NODE_ENV === "production") {
+  if (process.env.REACT_APP_NODE_ENV === "production") {
     return applyMiddleware(
       myRouterMiddleware,
       promiseMiddleware,
